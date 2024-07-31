@@ -1,5 +1,4 @@
-import styles from './DicomViewer.less';
-import CornerstoneViewport from 'react-cornerstone-viewport';
+ import CornerstoneViewport from 'react-cornerstone-viewport';
 import React, { useEffect } from 'react';
 import cornerstone from 'cornerstone-core';
 
@@ -24,7 +23,7 @@ function DicomViewer(props: any) {
   }
 
   return (
-    <div className={styles.DicomViewer}>
+    <div>
       <div className="test" style={{ width: 500 }}></div>
     </div>
   );

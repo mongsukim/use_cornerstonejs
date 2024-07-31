@@ -14,18 +14,10 @@ const HomePage: React.FC = () => {
         <Link to="/LoadingImages" className={location.pathname === "/LoadingImages" ? "activeNavButton navButton" : "navButton"}>
           Load Dicom Images
         </Link>
-        <Link to="/viewpage" className={location.pathname === "/viewpage" ? "activeNavButton navButton" : "navButton"}>
-          Viewmodes
-        </Link>
-        <Link to="/Help" className={location.pathname === "/Help" ? "activeNavButton navButton" : "navButton"}>
-          Help
-        </Link>
-        <Link to="/Contacts" className={location.pathname === "/Contacts" ? "activeNavButton navButton" : "navButton"}>
-          Contact Info
-        </Link>
+
       </div>
       <div className="mainContent">
-        <h1>Medical Images Processing and Visualization</h1>
+        <h1>home</h1>
       </div>
     </div>
   );

@@ -4,8 +4,7 @@ import cornerstone from "cornerstone-core";
 import cornerstoneTools from "cornerstone-tools";
 import cornerstoneWADOImageLoader from "cornerstone-wado-image-loader";
 import './old.css';
-import initCornerstone from "../initCornerstone.js";
-import Button from "./CustomButtonComponent";
+ import initCornerstone from "../initCornerstone.js";
 
 initCornerstone();
 
@@ -20,8 +19,7 @@ function LoadingImages() {
   }, [element]);
 
   const handleFolderChange = async () => {
-    alert('클릭');
-    try {
+     try {
       const folderHandle = await window.showDirectoryPicker();
       const imageIdPromises = [];
 
@@ -87,17 +85,11 @@ function LoadingImages() {
           <Link to="/LoadingImages" className={location.pathname === "/LoadingImages" ? "activeNavButton navButton" : "navButton"}>
             Load Dicom Images
           </Link>
-          <Link to="/viewpage" className={location.pathname === "/viewpage" ? "activeNavButton navButton" : "navButton"}>
-            Viewmodes
-          </Link>
-          <Link to="/Help" className={location.pathname === "/Help" ? "activeNavButton navButton" : "navButton"}>
-            Help
-          </Link>
-          <Link to="/Contacts" className={location.pathname === "/Contacts" ? "activeNavButton navButton" : "navButton"}>
-            Contact Info
-          </Link>
+
+
         </div>
         <div className="loader">
+            <div>DICOM이 들어있는 폴더를 선택하세요</div>
           <button onClick={handleFolderChange}>Load DICOM Folder</button>
           <button onClick={setZoomActive}>Zoom/Pan</button>
         </div>
@@ -133,18 +125,6 @@ function LoadingImages() {
         >
           <div id="dicomImage"></div>
         </div>
-        <Link to={{ pathname: "/Viewpage", state: { imageIds: imageIds } }}>
-          <Button
-              border="none"
-              color="blue"
-              height="200px"
-              onClick={() => console.log(imageIds)}
-              radius="50%"
-              width="200px"
-          >
-            Continue
-          </Button>
-        </Link>
       </div>
   );
 }
