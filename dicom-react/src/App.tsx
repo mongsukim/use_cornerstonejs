@@ -1,6 +1,7 @@
  import { Routes, Route, Link } from "react-router-dom"
 import CornerstoneOld from "./components/LoadingImages";
 import Homepage from "./components/WebHomepage";
+ import '../src/index.css'
 
 import React from "react";
 

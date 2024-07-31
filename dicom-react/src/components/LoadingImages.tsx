@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import cornerstone from "cornerstone-core";
 import cornerstoneTools from "cornerstone-tools";
 import cornerstoneWADOImageLoader from "cornerstone-wado-image-loader";
-import './old.css';
- import initCornerstone from "../initCornerstone.js";
+  import initCornerstone from "../initCornerstone.js";
 
 initCornerstone();
 
@@ -89,9 +88,9 @@ function LoadingImages() {
 
         </div>
         <div className="loader">
-            <div>DICOM이 들어있는 폴더를 선택하세요</div>
-          <button onClick={handleFolderChange}>Load DICOM Folder</button>
-          <button onClick={setZoomActive}>Zoom/Pan</button>
+            <div className=" ">DICOM이 들어있는 폴더를 선택하세요</div>
+          <button className="p-[10px] rounded-[5px] outline outline-1 mr-[30px]" onClick={handleFolderChange}>Load DICOM Folder</button>
+          <button className="p-[10px] rounded-[5px] outline outline-1" onClick={setZoomActive}>Zoom/Pan</button>
         </div>
         <div className="dicom-wrapper">
           <div className="thumbnail-selector">
