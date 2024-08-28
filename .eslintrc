@@ -1,0 +1,12 @@
+// eslint.config.js
+import { eslintRecommended } from '@eslint/js';
+
+export default [
+eslintRecommended,
+{
+rules: {
+'no-console': 'warn',
+'quotes': ['error', 'single'],
+}
+}
+];
