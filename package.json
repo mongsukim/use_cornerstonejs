@@ -1,7 +1,8 @@
 {
-  "name": "deepcatch-demo",
-  "private": true,
+   "name": "demo",
+   "private": true,
   "version": "0.0.0",
+  "homepage": "/demo/",
   "type": "module",
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --fix"
